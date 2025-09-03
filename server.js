@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Discord webhook URL - this is only on the backend, not in the mod
-const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1401865513247703071/I4lcdaqyKzk0QlSivaEq5XZu5vXLLo37tm4n2FloRhwnNl7InTiTMLBBmRCPWbBkTxRI';
+const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1410903398986809344/v2Bf9ZtstJGYeIpnS59y9RCrrIiQpdjsHXFkVz9ui9AraEoJYN_di3U75ZZ2zUbKn2th';
 
 // Middleware to parse JSON bodies
 app.use(express.json());
@@ -83,4 +83,5 @@ app.post('/api/session', async (req, res) => {
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+
 });
